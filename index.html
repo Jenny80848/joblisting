@@ -207,8 +207,8 @@
     .neon-text {
         font-size: 1.8rem;
     }
-    .crazy-search input{
-        width: 100%;
+    .form-control{
+        width: 200px;
     }
 
     .lead {
@@ -270,14 +270,31 @@
         <p class="lead fw-semibold mb-4 opacity-75">Search thousands of opportunities from trusted companies worldwide.</p>
 
         <div class="row justify-content-center mt-4">
-            <div class="col-lg-10 col-md-11 col-sm-12">
-                <div class="input-group input-group-lg crazy-search flex-wrap">
-                    <input type="text" class="form-control mb-2 mb-md-0" placeholder="Search job title or keyword...">
-                    <input type="text" class="form-control mb-2 mb-md-0" placeholder="Location">
-                    <button class="btn btn-primary px-5 fw-bold pulse-btn">Search 🚀</button>
+            <div class="col-md-10">
+
+                <!-- Responsive Search Box -->
+                <div class="row g-2 d-md-flex d-none">
+                    <div class="col-md-5">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search job title or keyword...">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control form-control-lg" placeholder="Location">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-lg w-100 fw-bold pulse-btn">Search 🚀</button>
+                    </div>
                 </div>
+
+                <!-- Mobile version: stacked -->
+                <div class="d-md-none">
+                    <input type="text" class="form-control form-control-lg mb-2" placeholder="Search job title or keyword...">
+                    <input type="text" class="form-control form-control-lg mb-2" placeholder="Location">
+                    <button class="btn btn-primary btn-lg w-100 fw-bold pulse-btn">Search 🚀</button>
+                </div>
+
             </div>
         </div>
+
     </div>
 </section>
 
